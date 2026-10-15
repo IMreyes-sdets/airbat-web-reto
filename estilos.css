@@ -1,0 +1,303 @@
+/* Estilos generales */
+
+:root {
+    --color-hover: #d9480f;   /* naranja: color de todos los efectos hover */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #263238;
+}
+
+/* Navegación */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #d9e1e8;
+}
+
+.navegacion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    line-height: 0;
+}
+
+.logo img {
+    height: 56px;
+    width: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.menu a {
+    color: #263238;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+    color: var(--color-hover);
+    border-bottom-color: var(--color-hover);
+}
+
+/* Sección principal */
+
+.hero {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h1 {
+    color: #0066b3;
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.hero-texto p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.etiqueta {
+    color: #0066b3;
+    font-size: 13px !important;
+    font-weight: bold;
+}
+
+.hero-imagen {
+    flex: 1;
+}
+
+.hero-imagen img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #0066b3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: var(--color-hover);
+}
+
+/* Secciones */
+
+.seccion {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.seccion h2 {
+    color: #0066b3;
+    margin-top: 0;
+}
+
+.seccion p {
+    line-height: 1.6;
+}
+
+/* Tarjetas de servicios */
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.tarjeta {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-left: 4px solid #0066b3;
+    border-radius: 6px;
+}
+
+.tarjeta:hover {
+    border-left-color: var(--color-hover);
+}
+
+.tarjeta h3 {
+    color: #0066b3;
+    margin-top: 0;
+}
+
+/* Marcas */
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.marcas span {
+    background-color: #eaf3f9;
+    color: #0066b3;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Contacto y formulario */
+
+.informacion-contacto {
+    margin-bottom: 30px;
+}
+
+.informacion-contacto a {
+    color: #0066b3;
+}
+
+.informacion-contacto a:hover {
+    color: var(--color-hover);
+}
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5dc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #0066b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+}
+
+/* Páginas en construcción */
+
+.construccion {
+    text-align: center;
+    border: 1px dashed #9fb4c5;
+}
+
+.icono-construccion {
+    font-size: 42px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    padding: 30px 25px;
+    background-color: #123b5d;
+    color: white;
+}
+
+.footer-contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-contenido h3 {
+    margin-top: 0;
+}
+
+.copyright {
+    text-align: center;
+    margin: 25px 0 0;
+    font-size: 13px;
+}
+
+/* Adaptación para pantallas pequeñas */
+
+@media (max-width: 800px) {
+
+    .navegacion {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .seccion {
+        margin: 15px;
+    }
+
+    .hero-texto h1 {
+        font-size: 30px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+    }
+}
